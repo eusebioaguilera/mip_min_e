@@ -1,2 +1,0 @@
-/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/build/CMakeFiles/mip_min_e_glpk.dir
-/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/build/CMakeFiles/mip_min_e_gurobi.dir
