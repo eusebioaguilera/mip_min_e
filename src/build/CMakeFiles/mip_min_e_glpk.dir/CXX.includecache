@@ -1,0 +1,160 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../contour.hpp
+cv.h
+../cv.h
+vector
+-
+string
+-
+valarray
+-
+limits
+-
+boost/python/list.hpp
+-
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/contextalgorithm.cpp
+contextalgorithm.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/contextalgorithm.hpp
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/contextalgorithm.hpp
+strategyalgorithm.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/strategyalgorithm.hpp
+iostream
+-
+string
+-
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/contour.cpp
+contour.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/contour.hpp
+rect.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/rect.hpp
+fstream
+-
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/contour.hpp
+cv.h
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/cv.h
+vector
+-
+string
+-
+valarray
+-
+limits
+-
+boost/python/list.hpp
+-
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/glpkstrategyalgorithm.cpp
+glpkstrategyalgorithm.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/glpkstrategyalgorithm.hpp
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/glpkstrategyalgorithm.hpp
+strategyalgorithm.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/strategyalgorithm.hpp
+glpk.h
+-
+cstdlib
+-
+iostream
+-
+sstream
+-
+contour.hpp
+-
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/mip_min_e_glpk.cpp
+iostream
+-
+unistd.h
+-
+cstdlib
+-
+sys/time.h
+-
+contextalgorithm.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/contextalgorithm.hpp
+glpkstrategyalgorithm.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/glpkstrategyalgorithm.hpp
+contour.hpp
+-
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/rect.cpp
+rect.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/rect.hpp
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/rect.hpp
+cmath
+-
+cv.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/cv.hpp
+boost/python.hpp
+-
+boost/python/tuple.hpp
+-
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/strategyalgorithm.hpp
+contour.hpp
+-
+iostream
+-
+string
+-
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/tools.cpp
+tools.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/tools.hpp
+
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/tools.hpp
+vector
+-
+contour.hpp
+/home/eusebio/Sync/Documentos/Visión Artificial/Implementaciones para publicar/mip_min_e/src/contour.hpp
+boost/python.hpp
+-
+boost/python/list.hpp
+-
+
+/home/eusebio/local/include/glpk.h
+stdarg.h
+-
+stddef.h
+-
+
+/usr/include/opencv/cv.h
+opencv2/core/core_c.h
+/usr/include/opencv/opencv2/core/core_c.h
+opencv2/core/core.hpp
+/usr/include/opencv/opencv2/core/core.hpp
+opencv2/imgproc/imgproc_c.h
+/usr/include/opencv/opencv2/imgproc/imgproc_c.h
+opencv2/imgproc/imgproc.hpp
+/usr/include/opencv/opencv2/imgproc/imgproc.hpp
+opencv2/video/tracking.hpp
+/usr/include/opencv/opencv2/video/tracking.hpp
+opencv2/features2d/features2d.hpp
+/usr/include/opencv/opencv2/features2d/features2d.hpp
+opencv2/flann/flann.hpp
+/usr/include/opencv/opencv2/flann/flann.hpp
+opencv2/calib3d/calib3d.hpp
+/usr/include/opencv/opencv2/calib3d/calib3d.hpp
+opencv2/objdetect/objdetect.hpp
+/usr/include/opencv/opencv2/objdetect/objdetect.hpp
+opencv2/legacy/compat.hpp
+/usr/include/opencv/opencv2/legacy/compat.hpp
+opencv2/core/internal.hpp
+/usr/include/opencv/opencv2/core/internal.hpp
+
+/usr/include/opencv/cv.hpp
+cv.h
+-
+
