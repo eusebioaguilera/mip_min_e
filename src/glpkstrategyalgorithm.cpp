@@ -188,32 +188,7 @@ void GLPKStrategyAlgorithm::ObjectiveFunction(const libcontour::ContourStats& cn
             glp_set_col_name(this->mip, idx, buffer); /// Set name to X_i_j
             glp_set_col_kind(this->mip, idx, GLP_BV); /// Set var to binary type
 
-            // if ( i != j ) {
-            ////cout << "Rect(" << i << ", " << j << ") to points: ";
-            ////Rect r = Rect( cnt[i],cnt[j] );
-            // libcontour::Point pi = cnt[i];
-            // libcontour::Point pj = cnt[j];
-
-            ////int k = (i + 1) % npoints;
-            ////int k_end = i+( (j-i) % npoints );
-            ////while ( k != k_end ) {
-            //////cout << k << ",";
-            ////libcontour::Point pk = cnt[k];
-            ////if ( !(pi == pj) ) {
-            ////coef += pow( ( (pk.x() - pi.x()) * (pj.y() - pi.y()) - (pk.y() - pi.y()) * (pj.x() - pi.x()) ) ,2 ) / (
-            /// pow( pi.x() - pj.x() ,2 ) + pow( pi.y() - pj.y() , 2) );
-            ////} else {
-            ////// Distance from pi(pj) to pk
-            ////coef += sqrt( pow( pi.x() - pk.x(), 2 ) + pow( pi.y() - pk.y(), 2 ) );
-            ////}
-            ////k = (k + 1) % npoints;
-            ////}
-
-            // glp_set_obj_coef(this->mip, idx, coef);
-
-            ////cout << coef << " dominants_" << i << "_" << j << " + ";
-            // coef = 0.0;
-            //}
+            // Obtain the value for the A matrix
             glp_set_obj_coef(this->mip, idx, cnt.computeISEForSegment(i, j));
         }
     }
@@ -233,8 +208,6 @@ void GLPKStrategyAlgorithm::Execute(void)
         glp_term_out(1);
     else
         glp_term_out(0);
-
-    // glp_write_lp( this->mip, NULL, "temp.lp" );
 
     int err = glp_intopt(this->mip, &parm);
 
