@@ -120,9 +120,9 @@ void GLPKStrategyAlgorithm::LoadModel(const libcontour::ContourStats& cnt, int n
 
         for (int j = 0; j < N; j++) {
             if (i != j) {
-                ia[mcounter] = ccounter, ja[mcounter] = ((N * i) + j + 1), ar[mcounter] = 1; /// +1 Dominants_i_j
+                ia[mcounter] = ccounter, ja[mcounter] = ((N * i) + j + 1), ar[mcounter] = 1; /// +1 X_i_j
                 mcounter++;
-                ia[mcounter] = ccounter, ja[mcounter] = ((N * j) + i + 1), ar[mcounter] = -1; /// -1 Dominants_j_i
+                ia[mcounter] = ccounter, ja[mcounter] = ((N * j) + i + 1), ar[mcounter] = -1; /// -1 X_j_i
                 mcounter++;
             }
         }
@@ -184,8 +184,8 @@ void GLPKStrategyAlgorithm::ObjectiveFunction(const libcontour::ContourStats& cn
             // cout << "i " << i << " j " << j << endl;
 
             idx = (i * npoints) + j + 1;
-            // sprintf(buffer, "dominants_%d_%d", i, j);
-            glp_set_col_name(this->mip, idx, buffer); /// Set name to dominants_i_j
+            sprintf(buffer, "X_%d_%d", i, j);
+            glp_set_col_name(this->mip, idx, buffer); /// Set name to X_i_j
             glp_set_col_kind(this->mip, idx, GLP_BV); /// Set var to binary type
 
             // if ( i != j ) {
